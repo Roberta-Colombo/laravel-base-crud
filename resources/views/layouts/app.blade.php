@@ -9,8 +9,9 @@
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
-    <!-- Fonts -->
+    <!-- Fonts & Icons -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Styles -->
     @vite('resources/js/app.js')
@@ -18,8 +19,9 @@
 </head>
 
 <body>
-
-    @include('partials.header')
+    <header class="sticky-top position-absolute">
+        @include('partials.header')
+    </header>
 
     <main>
     @yield('snow')
@@ -27,7 +29,9 @@
     @yield('content') 
     </main>
 
-    @include('partials.footer')
+    <footer class="sticky-bottom position-absolute">
+        @include('partials.footer')
+    </footer>
 
 </body>
 

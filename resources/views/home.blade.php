@@ -34,12 +34,3 @@
   setInterval('updateTimer()', 1000 );
 </script>
 
-
-{{-- 
-@section('content') --}}
-
-{{-- <section class="prova">
-<h1>Hello</h1>
-</section> --}}
-
-{{-- @endsection --}}
