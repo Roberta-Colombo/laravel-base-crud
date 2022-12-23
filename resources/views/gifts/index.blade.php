@@ -9,9 +9,9 @@
             <div id="box" class="d-flex">
                 @foreach ($gifts as $gift)
                 <div class="card col-3  me-3" style="width: 18rem;">
-                    <img src={{$gift->image}} class="card-img-top" alt="...">
+                    <img src={{$gift->image}} class="card-img-top" alt="Regalo">
                     <div class="card-body">
-                    <h5 class="card-title">{{$gift->name}}</h5>
+                    <h4 class="card-title">{{$gift->name}} {{$gift->surname}}</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href={{route('gifts.show', $gift->id)}} class="btn btn-primary">Apri regalo</a>
                     </div>

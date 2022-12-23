@@ -89,6 +89,17 @@ class GiftsController extends Controller
     {
         $gift = Gift::find($id);
 
+        $request->validate([
+            'gift' => 'required',
+            'name' => 'required',
+            'surname' => 'required',
+            'age' => 'required',
+            'country' => 'required',
+            'city' => 'required',
+            'address' => 'required',
+            'image' => 'required'
+        ]);
+
         $formData = $request->all();
         $gift->gift = $formData['gift'];
         $gift->name = $formData['name'];
