@@ -1,5 +1,5 @@
 <footer>
-    <div class="container">
+    <div class="container-hf">
        <div id="logo-footer">
         <img src="{{Vite::asset('resources/img/logo_santa_claus_white.png')}}" alt="Logo Santa Claus">
        </div>
