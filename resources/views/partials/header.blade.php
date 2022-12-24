@@ -11,13 +11,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav ">
                 <li class="nav-item pe-3">
-                <a class="nav-link active text-white" aria-current="page" href="{{route('home')}}">Home</a>
+                <a class="nav-link active text-white hover-underline-animation" aria-current="page" href="{{route('home')}}">Home</a>
                 </li>
                 <li class="nav-item pe-3">
-                <a class="nav-link text-white" href="{{route('gifts.index')}}">Lista Regali</a>
+                <a class="nav-link text-white hover-underline-animation" href="{{route('gifts.index')}}">Lista Regali</a>
                 </li>
                 <li class="nav-item pe-3">
-                <a class="nav-link text-white" href="{{route('gifts.create')}}">Inserisci un regalo</a>
+                <a class="nav-link text-white hover-underline-animation" href="{{route('gifts.create')}}">Inserisci un regalo</a>
                 </li>
             </ul>
             </div>
